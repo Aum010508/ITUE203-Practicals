@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Login Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("765298e78195a6e871ff13979e577506.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #0044cc;
+      padding: 15px 30px;
+      background-color: rgba(240, 248, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    .login-box {
+      background: rgba(189, 255, 248, 0.3); /* semi-transparent */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 400px;
+      justify-content: top;
+      text-align: center;
+    }
+    .login-box h2 {
+      color: #45a049;
+      margin-bottom: 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 3px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .login-box input[type="submit"] {
+      width: 90%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .login-box input[type="submit"]:hover {
+      background: #45a049;
+    }
+    a:hover {
+      color: #5fcc3a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Login Portal</h1>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="return loginUser()">
+  <input type="text" id="username" placeholder="Username" required><br>
+  <input type="password" id="password" placeholder="Password" required><br>
+  <input type="submit" value="Login">
+  <div style="justify-content:  left;margin-right: 280px;"><a style="font-family: 'Courier New', Courier, monospace;color: rgb(255, 255, 255);" href="register.html">Register</a></div>
+  
+</form>
+
+<script>
+function loginUser() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  // Example check (replace with real validation)
+  if(user === "25DCS137" && pass === "Aum Upadhyaya") {
+    window.location.href = "mainpage.html";
+    return false;
+  } else {
+    alert("Invalid username or password!");
+    return false;
+  }
+}
+</script>
+  </div>
+  
+</body>
+</html>
