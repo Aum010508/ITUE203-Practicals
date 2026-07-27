@@ -2,77 +2,8 @@
 <html>
 <head>
   <title>Student Portal - Main Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: url("765298e78195a6e871ff13979e577506.jpg") no-repeat center center fixed;
-      background-size: cover;
-    }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(97, 74, 227, 0.3);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      transition: top 0.3s;
-      z-index: 1000;
-    }
-
-    .logo {
-  width: 40px;             
-  height: 40px;             
-  display:flex;
-  align-items: center;
-  justify-content: center; 
-  overflow: hidden;        
-}
-
-.logo img {
-  height: 100%;             
-  width: auto;              
-  object-fit:cover;       
-}
-
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .nav-links a:hover {
-      color: #45a049;
-    }
-
-    .content {
-      margin-top: 60px;
-      padding: 20px;
-      text-align: left;
-      color: #ffffff;
-    }
-
-    .box {
-      background: rgba(0, 0, 0, 0.5); 
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      width: 95%;
-      justify-content: center;
-        text-align: left;
-      color: #3cb1ff;
-    }
-  </style>
+  <link rel="stylesheet" href="WEBSITE.css">
 </head>
 <body>
   <div class="navbar" id="navbar">
@@ -86,27 +17,13 @@
       <a href="login.html">Your Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
     </div>
   </div>
-
   
   <div class="content">
-      <h1>Welcome to the Student Portal!🥳</h1>
+      <h1>Welcome to the Student Portal!</h1>
       <p>Here you can manage your account, check your attendance and fees and access counselling services.</p>
       <p>Please use the navigation bar above to explore the available options.</p>
   </div>
 
-  
-  <script>
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-70px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
 
 </body>
 </html>

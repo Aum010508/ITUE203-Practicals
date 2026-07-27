@@ -2,77 +2,8 @@
 <html>
 <head>
   <title>Student Login Portal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: url("765298e78195a6e871ff13979e577506.jpg") no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(97, 74, 227, 0.3);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      transition: top 0.3s;
-      z-index: 1000;
-    }
-
-    .logo {
-  width: 40px;             
-  height: 40px;             
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;          
-}
-
-.logo img {
-  height: 100%;             
-  width: auto;              
-  object-fit:cover;       
-}
-
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .nav-links a:hover {
-      color: #45a049;
-    }
-
-    .content {
-      margin-top: 60px;
-      padding: 20px;
-      text-align: left;
-      color: #ffffff;
-    }
-
-    .box {
-      background: rgba(0, 0, 0, 0.5); 
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      width: 95%;
-      justify-content: center;
-        text-align: left;
-      color: #3cb1ff;
-    }
-  </style>
+  
+  <link rel="stylesheet" href="WEBSITE.css">
 </head>
 <body>
   <div class="navbar" id="navbar">
@@ -89,8 +20,12 @@
 
   <div class="content">
   <div class ="box">
-    <h1 style="color: hsl(40, 100%, 54%);">Check Fees</h1><hr>
+    <h1 style="color: hsl(40, 100%, 54%);text-align: center;">Check Fees</h1><hr>
     <p>Here you can check your fee status and payment details.</p>
+
+    <h3>Payment Options:</h3>
+    <a href="online_payment.html" style="color: #00cc5f; text-decoration: underline;">CLICK HERE FOR ONLINE PAYMENT</a><br><br>
+    <a href="offline_payment.html" style="color: #00cc5f; text-decoration: underline;">CLICK HERE FOR OFFLINE PAYMENT</a>
   </div><br><br>
 </div>
 
