@@ -77,3 +77,24 @@ body {
         text-align: left;
       color: #0471ffbb;
     }
+
+    .info-table {
+      width: 100%;
+      border: 1px solid #000000;
+      border-collapse: collapse;
+      
+    }
+
+    .info-table th{
+      border: 1px solid #000000;
+      padding: 8px;
+      text-align: left;
+      background-color: #949292;
+      color: #000000;
+      width: 25%;
+    }
+    .info-table td{
+      border: 1px solid #000000;
+      padding: 8px;
+      text-align: left;
+    }
