@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Student Login Portal</title>
-  <link rel="stylesheet" href="LOGIN.css">
-
+  <title>Student Registration Portal</title>
+  <link rel="stylesheet" href="register.css">
+  <script src="register.js"></script>
 </head>
 <body>
   <div class="login-box">
     <h2>Register</h2>
-    <input style="width: 25%;" type="text" id="First name" placeholder="First name" required>
-    <input style="width: 22%;" type="text" id="Middle name" placeholder="Middle name" required>
-    <input style="width: 25%;"type="text" id="Last name" placeholder="last name" required><br>
-  <input type="text" id="username" placeholder="Username" required><br>
-  <input type="password" id="password" placeholder="Password" required><br>
-  <input type="password" id="password" placeholder="Confirm Password" required><br>
-  <input type="submit" value="Register" onclick="window.location.href='mainpage.html';">
-
-</form>
-
+    <form id="registerForm" onsubmit="return registerUser(event)">
+      <input style="width: 25%;" type="text" id="firstName" placeholder="First name" required>
+      <input style="width: 22%;" type="text" id="middleName" placeholder="Middle name">
+      <input style="width: 25%;" type="text" id="lastName" placeholder="Last name" required><br>
+      
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+      
+      <input type="submit" value="Register">
+    </form>
   </div>
 </body>
 </html>

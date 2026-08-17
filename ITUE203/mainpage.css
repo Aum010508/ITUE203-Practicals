@@ -1,0 +1,126 @@
+html{
+      background-image: radial-gradient(#7ee8e841,#dedda837);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color:#ffe7c208;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background:rgb(65, 105, 225);
+      color: rgba(255, 0, 0, 0.756);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      transition: top 0.3s;
+      z-index: 1000;
+    }
+
+    .logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100%;             
+  width: auto;              
+  object-fit:cover;       
+}
+
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: rgb(255, 255, 0);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links a:hover {
+      color:#ffa51f;
+    }
+
+    .content {
+      margin-top: 80px;
+      padding: 30px;
+      text-align: left;
+      color: #000000c4;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.5); 
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      max-width: 95%;
+      justify-content: center;
+        text-align: left;
+      color: #0471ffbb;
+    }
+    .box-two {
+      background: rgba(58, 56, 56, 0.01); 
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      max-width: 95%;
+      justify-content: center;
+        text-align: left;
+      color: #0471ffbb;
+    }
+
+    .info-table {
+      width: 100%;
+      border: 1px solid #000000;      
+    }
+
+    .info-table th{
+      border: 1px solid #000000;
+      padding: 8px;
+      text-align: left;
+      color: #2e2e2e;
+      width: 25%;
+    }
+    .info-table td{
+      border: 1px solid #000000;
+      padding: 8px;
+      text-align: left;
+      color:rgb(54, 55, 146);
+    }
+
+    .flex-box{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+  
+    .box-options{
+      background: rgba(237, 237, 237, 0.2); 
+      padding: 30px 60px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      justify-content: center;
+      text-align: left;
+    }
+    .box-options:hover{
+      background: #d1ffd65d;
+      padding: 30px 60px;
+      border-radius: 15px;
+      box-shadow: 0 3px 25px #7f7f7f;
+      justify-content: center;
+      text-align: left;
+    }
