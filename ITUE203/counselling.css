@@ -124,3 +124,7 @@ body {
       justify-content: center;
       text-align: left;
     }
+    body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}

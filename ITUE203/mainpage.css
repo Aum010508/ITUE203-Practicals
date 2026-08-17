@@ -124,3 +124,55 @@ body {
       justify-content: center;
       text-align: left;
     }
+    
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background: #111;
+  color: #fff;
+}
+
+body.dark-mode .nav-links a {
+  color: #ddd;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #ffcc00;
+}
+
+body.dark-mode .box {
+  background: rgba(50, 50, 50, 0.8);
+  color: #eee;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+}
+
+body.dark-mode .box-two {
+  background: rgba(30, 30, 30, 0.8);
+  color: #eee;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+}
+
+body.dark-mode .info-table th {
+  background: #333;
+  color: #fff;
+  border: 1px solid #888;
+}
+
+body.dark-mode .info-table td {
+  background: #222;
+  color: #ddd;
+  border: 1px solid #666;
+}
+
+body.dark-mode .box-options {
+  background: rgba(80, 80, 80, 0.6);
+  color: #fff;
+}
+
+body.dark-mode .box-options:hover {
+  background: rgba(120, 120, 120, 0.8);
+  box-shadow: 0 3px 25px #aaa;
+}
