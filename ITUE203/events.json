@@ -7,6 +7,14 @@
     },
     {
         "id" : 2,
-        "name" : ""
+        "name" : "COGNIZANCE",
+        "date" : "4th October",
+        "venue" : "DEPSTAR"
+    },
+    {
+        "id" : 3,
+        "name" : "iFest",
+        "date" : "27th September",
+        "venue" : "DAIICT"
     }
 ]

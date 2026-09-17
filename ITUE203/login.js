@@ -23,7 +23,6 @@ async function loginUser()
         const match = users.find(u => u.username === usernameInput && u.password === passwordInput);
 
         if (match) {
-            // Use the "name" field from JSON
             alert(`Login successful! Welcome ${match.name}`);
             window.location.href = "mainpage.html";
         } else {

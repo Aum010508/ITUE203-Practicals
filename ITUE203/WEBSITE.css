@@ -37,6 +37,25 @@ body {
   object-fit:cover;       
 }
 
+.Events-list{
+  background-color: #ffffff;
+  margin: 0px 30px;
+  padding: 10px;
+  color: #355be7e2;
+  box-shadow: 2px 10px 10px 2px #0101015f;
+  border-radius: 15px;
+  justify-content: center;
+}
+.Event-element{
+  background-color: #8fcd8fb5;
+  margin: 10px;
+  padding: 5px;
+  color:#000000;
+  box-shadow: 2px 5px 5px 2px #000000;
+  border-radius: 5px;
+  display: flex;
+  max-width: 28%
+}
 
     .nav-links {
       display: flex;
@@ -65,7 +84,6 @@ body {
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      max-width: 95%;
       justify-content: center;
         text-align: left;
       color: #0471ffbb;
@@ -75,7 +93,6 @@ body {
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      max-width: 95%;
       justify-content: center;
         text-align: left;
       color: #0471ffbb;
