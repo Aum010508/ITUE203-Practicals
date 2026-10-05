@@ -37,25 +37,103 @@ body {
   object-fit:cover;       
 }
 
-.Events-list{
-  background-color: #ffffff;
-  margin: 0px 30px;
-  padding: 10px;
-  color: #355be7e2;
-  box-shadow: 2px 10px 10px 2px #0101015f;
-  border-radius: 15px;
-  justify-content: center;
+#events-container{
+  display:flex;
+  flex-wrap: wrap;
+  gap: auto;
 }
+
 .Event-element{
-  background-color: #8fcd8fb5;
-  margin: 10px;
-  padding: 5px;
+  background-color: #ffff002f;
+  margin: 25px;
+  padding: 15px;
   color:#000000;
   box-shadow: 2px 5px 5px 2px #000000;
   border-radius: 5px;
-  display: flex;
-  max-width: 28%
+  flex: 0 0 42%;
 }
+
+.Event-element h3{
+  color: #ff000092;
+}
+
+.Event-element:hover{
+  background-color: #59ed546c;
+  position: relative;
+  bottom: 5px;
+  box-shadow: 2px 5px 5px 2px #000000bf;
+}
+
+#Enroll{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.enroll-button:hover{
+  background-color: #81ff6bc0;
+  position: relative;
+  bottom: 2px;
+  
+}
+
+.enroll-button{
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #0471ffbb;
+  box-shadow: 2px 5px 5px 2px #000000bf;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    .enroll-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    .enroll-form label {
+      font-weight: bold;
+      color: #0471ffbb;
+    }
+    .enroll-form input, .enroll-form select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .enroll-form button {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      margin: 20px auto;
+      border-radius: 5px;
+      background-color: #0471ffbb;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      box-shadow: 2px 5px 5px 2px #000000bf;
+      cursor: pointer;
+    }
+    .enroll-form button:hover {
+      background-color: #81ff6bc0;
+      position: relative;
+      bottom: 2px;
+    }
+    body.dark-mode .enroll-form label {
+        color: #eee;
+    }
+    body.dark-mode .enroll-form input, 
+    body.dark-mode .enroll-form select {
+        background-color: #222;
+        color: #ddd;
+        border: 1px solid #666;
+    }
 
     .nav-links {
       display: flex;
@@ -87,7 +165,13 @@ body {
       justify-content: center;
         text-align: left;
       color: #0471ffbb;
+      margin: auto;
     }
+
+    .box h1{
+      color: hsl(40, 100%, 54%);
+    }
+
     .box-two {
       background: rgba(58, 56, 56, 0.01); 
       padding: 20px;
