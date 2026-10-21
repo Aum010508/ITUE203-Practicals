@@ -1,11 +1,10 @@
-// Added 'event' as a parameter here
 async function loginUser(event) 
 {
-    // Added this critical line to stop the page from refreshing instantly
     event.preventDefault(); 
     
     const usernameInput = document.getElementById('username').value.trim();
-    const passwordInput = document.getElementById('password').value.trim();
+const passwordInput = document.getElementById('password').value.trim();
+const rememberMeInput = document.getElementById('rememberMe').checked;
 
     const usernameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!\%*?&]{8,}$/;
@@ -26,15 +25,22 @@ async function loginUser(event)
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
                 username: usernameInput, 
-                password: passwordInput 
+                password: passwordInput,
+                remember_me: rememberMeInput
             })
         });
         
+
         const result = await response.json();
 
         if (result.status === "success") {
             alert(`Login successful! Welcome ${result.name}`);
-            window.location.href = "mainpage.html";
+            
+            if (result.role === 'admin') {
+                window.location.href = "admin_dashboard.html";
+            } else {
+                window.location.href = "mainpage.html"; 
+            }
         } else {
             alert(result.message);
         }
